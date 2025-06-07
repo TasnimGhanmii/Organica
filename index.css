@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "organica";
+  src: url("../font/Mootjunglefreeversion-Regular.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+  gap: 40rem;
+  background-color: #E1FEE2;
+  padding: 13px;
+  padding-top: 6px;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+nav .logo img {
+  max-height: 30px;
+}
+nav .logo p {
+  font-family: "organica";
+  font-size: xx-large;
+}
+nav .links {
+  display: flex;
+  gap: 30px;
+  padding: 15px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: normal;
+}
+nav .links a {
+  text-decoration: none;
+  padding: 8px;
+}
+nav .links .phone {
+  background-color: #27AF60;
+  color: white;
+  border-radius: 7px;
+}
+
+/*# sourceMappingURL=index.css.map */

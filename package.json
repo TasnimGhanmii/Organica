@@ -1,0 +1,29 @@
+{
+  "name": "organica",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass index.scss index.css",
+    "watch": "sass --watch index.scss index.css"
+
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TasnimGhanmii/Organica.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/TasnimGhanmii/Organica/issues"
+  },
+  "homepage": "https://github.com/TasnimGhanmii/Organica#readme",
+  "devDependencies": {
+    "sass": "^1.89.1"
+  }
+  
+}
