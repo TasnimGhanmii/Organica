@@ -7,7 +7,14 @@
 {
     background-color: #26AE61;
     color: white;
-    border-radius: 10px;
+    border-radius: 7px;
+}
+
+@mixin white-btn
+{
+    border: #123217d2 solid 3px;
+    border-radius: 7px;
+
 }
 
 nav {
@@ -57,9 +64,7 @@ nav {
     }
 
     .phone {
-      background-color: #27AF60;
-      color: white;
-      border-radius: 7px;
+      @include green-btn;
     }
   }
 }
