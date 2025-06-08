@@ -2,6 +2,12 @@
   margin: 0;
   padding: 0;
 }
+
+@font-face {
+  font-family: 'organica';
+  src: url('../font/Mootjunglefreeversion-Regular.ttf') format('truetype');
+}
+
 @mixin btn
 {
        border-radius: 7px;
@@ -18,7 +24,8 @@
 @mixin white-btn
 {  
     @include btn;
-    border: #123217d2 solid 1px;
+    border:  rgb(74, 173, 74) solid 1px;
+    background-color: white;
 }
 
 nav {
@@ -87,7 +94,7 @@ main
   {  
     display: flex;
     gap: 15px;
-      .green-btn
+    .green-btn
     {
       @include green-btn;
     }
@@ -101,5 +108,48 @@ main
   {
     max-height: 35rem;
   }
-}
+  p{
+    margin: 10px;
+  }
+  .desc
+  {
+    padding: 10px;
+    width:220px;
+    background-color: white;
+    border: rgb(74, 173, 74) solid 1px;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: small;
+    text-align: center;
+  }
+  .desc1
+  { 
+    margin: 10px;
+    font-size:4cap;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    span
+    {
+      color: #49AF75;
+    }
+  }
+  .desc2
+  {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #6f766f;
+  }
 
+  .media
+  {
+   display: inline-block;
+   margin-top: 80px;
+   padding: 10px;
+   background-color: white;
+   border: 1px rgb(74, 173, 74) solid;
+   border-radius: 10px;
+   a{
+    margin: 13px;
+   }
+  }
+}
