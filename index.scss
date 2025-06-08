@@ -102,11 +102,46 @@ main
     {
       @include white-btn;
     }
-}
+
   
+}
+  .shape
+  { 
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border : #6f766f solid 1px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.723);
+    z-index: 3; 
+   
+
+  }
+  
+  
+  .img-container
+  {
+      
+      width: 30rem; /* adjust as needed */
+      height: 30rem; /* circular base */
+      background-color: #71D377;
+      border-radius: 15%;
+      border-top-right-radius: 50%;
+      overflow: visible; /* allows child to pop out */
+      display: flex;
+      transform: translateX(-5%);
+      transform: translatey(10%);
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+  }
   img
   {
-    max-height: 35rem;
+    max-height: 35rem; 
+    transform: translatey(-7.3%);
+    z-index: 2;
   }
   p{
     margin: 10px;
@@ -150,6 +185,8 @@ main
    border-radius: 10px;
    a{
     margin: 13px;
+    
    }
   }
+  
 }
