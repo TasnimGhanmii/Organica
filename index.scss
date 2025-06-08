@@ -1,57 +1,65 @@
-@font-face {
-  font-family: 'organica';
-  src: url('../font/Mootjunglefreeversion-Regular.ttf') format('truetype');
+* {
+  margin: 0;
+  padding: 0;
 }
 
-*{
-    margin: 0;
-    padding: 0;
+@mixin green-btn
+{
+    background-color: #26AE61;
+    color: white;
+    border-radius: 10px;
 }
-nav{
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40rem;
+  background-color: #E1FEE2;
+  padding: 13px;
+  padding-top: 6px;
+
+  .logo {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    justify-items: center;
-    gap:40rem;
-    background-color: #E1FEE2;
-    padding: 13px;
-    padding-top: 6px;
-
-    .logo{
-        display: flex;
-        align-items: center;
-        justify-items: center;
-        img{
-        max-height: 30px;
-           }
-        p{
-            font-family: 'organica';
-            font-size: xx-large;
-            
-        }
+    img {
+      max-height: 30px;
     }
-    
-    .links {
-        display: flex;
-        gap: 30px;
-        padding:15px;
-        background-color: rgb(255, 255, 255);
-        border-radius: 10px;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-weight:normal;
+    p {
+      font-family: 'organica';
+      font-size: xx-large;
+    }
+  }
 
-        a{
-            text-decoration: none;
-            padding: 8px;
-        }
-        .phone{
-                background-color: #27AF60;
-                color: white;
-                border-radius: 7px;
-                
-            }
-        }
+  .links {
+    display: flex;
+    gap: 30px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
 
-    
+    a {
+      text-decoration: none;
+      padding: 8px;
+      color: #000;
+      text-shadow: none;
+      transition: text-shadow 0.4s ease-in-out;
+
+      &:hover {
+        text-shadow: 
+         0 0 5px #aaffaa,
+         0 0 10px #99ff99,
+         0 0 20px #88ff88,
+         0 0 30px #7fff7f;
+      }
+    }
+
+    .phone {
+      background-color: #27AF60;
+      color: white;
+      border-radius: 7px;
+    }
+  }
 }
-  
