@@ -43,9 +43,41 @@ nav .links a:hover {
   text-shadow: 0 0 5px #aaffaa, 0 0 10px #99ff99, 0 0 20px #88ff88, 0 0 30px #7fff7f;
 }
 nav .links .phone {
-  background-color: #27AF60;
-  color: white;
   border-radius: 7px;
+  padding: 13px;
+  background-color: #26AE61;
+  color: white;
+  border: none;
+}
+
+main {
+  padding: 10rem;
+  padding-top: 3rem;
+  background: radial-gradient(circle at center, white 50%, #DCF6E2);
+  border-bottom-left-radius: 23%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+main .btns {
+  display: flex;
+  gap: 15px;
+}
+main .btns .green-btn {
+  border-radius: 7px;
+  padding: 13px;
+  background-color: #26AE61;
+  color: white;
+  border: none;
+}
+main .btns .white-btn {
+  border-radius: 7px;
+  padding: 13px;
+  border: rgba(18, 50, 23, 0.8235294118) solid 1px;
+}
+main img {
+  max-height: 35rem;
 }
 
 /*# sourceMappingURL=index.css.map */

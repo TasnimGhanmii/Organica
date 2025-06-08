@@ -2,19 +2,23 @@
   margin: 0;
   padding: 0;
 }
-
-@mixin green-btn
+@mixin btn
 {
+       border-radius: 7px;
+       padding: 13px
+}
+@mixin green-btn
+{   
+    @include btn;
     background-color: #26AE61;
     color: white;
-    border-radius: 7px;
+    border: none;
 }
 
 @mixin white-btn
-{
-    border: #123217d2 solid 3px;
-    border-radius: 7px;
-
+{  
+    @include btn;
+    border: #123217d2 solid 1px;
 }
 
 nav {
@@ -68,3 +72,34 @@ nav {
     }
   }
 }
+
+main
+{
+  padding: 10rem;
+  padding-top: 3rem;
+  background: radial-gradient(circle at center, white 50%, #DCF6E2);
+  border-bottom-left-radius: 23%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  .btns
+  {  
+    display: flex;
+    gap: 15px;
+      .green-btn
+    {
+      @include green-btn;
+    }
+    .white-btn
+    {
+      @include white-btn;
+    }
+}
+  
+  img
+  {
+    max-height: 35rem;
+  }
+}
+
